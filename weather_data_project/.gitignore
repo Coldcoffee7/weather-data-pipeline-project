@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+postgres/data/
+airflow/logs/
+airflow/airflow.db
+.DS_Store
