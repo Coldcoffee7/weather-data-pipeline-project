@@ -131,8 +131,6 @@ Toronto payload — useful for testing the insert logic without hitting the live
 
 - [ ] **Add dbt transformations** — model raw weather data into clean, analytics-ready
       tables with staging and mart layers
-- [ ] **Expand city coverage** — parameterize the pipeline to ingest multiple cities
-      and build historical snapshots for trend analysis
 - [ ] **Deploy to AWS** — migrate PostgreSQL to RDS and run Airflow on MWAA or EC2
 - [ ] **Add data quality checks** — integrate dbt tests or Great Expectations to
       validate records on ingestion
