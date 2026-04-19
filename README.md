@@ -1,6 +1,6 @@
-# Weather Data Pipeline
+# Toronto Weather Data Pipeline
 
-An end-to-end data pipeline that ingests live weather data from the WeatherStack API,
+An end-to-end data pipeline that ingests live weather data for the city of Toronto from the WeatherStack API,
 stores it in a PostgreSQL database, and orchestrates scheduled runs using Apache Airflow —
 all containerized with Docker.
 
@@ -17,13 +17,10 @@ all containerized with Docker.
 ## Architecture
 WeatherStack API
 │
-▼
 api_request.py (Extract + Transform)
 │
-▼
 insert_records.py (Load → dev.raw_weather_data)
 │
-▼
 Airflow DAG — weather_api_orchestrator (every 5 min)
 
 ## Services
